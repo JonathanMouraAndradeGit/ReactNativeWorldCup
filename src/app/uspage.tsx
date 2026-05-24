@@ -49,7 +49,7 @@ export default function CopaUSA() {
               <Image
                 style={styles.contentImage}
                 source={{
-                  uri: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+                  uri: "https://paises.ibge.gov.br/img/bandeiras/US.gif",
                 }}
               />
 
@@ -85,9 +85,10 @@ export default function CopaUSA() {
               </View>
               <Image
                 style={styles.contentImage}
-                source={{
-                  uri: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop",
-                }}
+                source={
+                  require('../../assets/img/ny.jpg')
+                  //uri: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop",
+                }
               />
             </View>
           </View>
@@ -97,9 +98,9 @@ export default function CopaUSA() {
             <View style={styles.contentRow}>
               <Image
                 style={styles.contentImage}
-                source={{
-                  uri: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop",
-                }}
+                source={
+                  require('../../assets/img/stad.jpg')
+                }
               />
 
               <View style={styles.contentTextBox}>

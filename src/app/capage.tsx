@@ -30,7 +30,7 @@ export default function caPage(props: any) {
 
                         <View style={styles.heroContent}>
                             <Text style={styles.heroTitle}>
-                                Copa do Mundo{"\n"}nos Estados Unidos
+                                Copa do Mundo{"\n"}no Canada
                             </Text>
 
                             <Text style={styles.heroSubtitle}>
@@ -45,7 +45,7 @@ export default function caPage(props: any) {
                         <Image
                             style={styles.contentImage}
                             source={{
-                                uri: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1200&auto=format&fit=crop",
+                                uri: "https://paises.ibge.gov.br/img/bandeiras/CA.gif",
                             }}
                         />
 
@@ -88,9 +88,9 @@ export default function caPage(props: any) {
 
                         <Image
                             style={styles.contentImage}
-                            source={{
-                                uri: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=1200&auto=format&fit=crop",
-                            }}
+                            source={
+                                require('../../assets/img/Toronto-1.jpg')
+                            }
                         />
                     </View>
                 </View>
@@ -100,9 +100,9 @@ export default function caPage(props: any) {
                     <View style={styles.contentRow}>
                         <Image
                             style={styles.contentImage}
-                            source={{
-                                uri: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
-                            }}
+                            source={ 
+                                require('../../assets/img/stad.jpg')
+                            }
                         />
 
                         <View style={styles.contentTextBox}>

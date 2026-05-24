@@ -30,7 +30,7 @@ export default function mePage() {
 
                         <View style={styles.heroContent}>
                             <Text style={styles.heroTitle}>
-                                Copa do Mundo{"\n"}nos Estados Unidos
+                                Copa do Mundo{"\n"}no Mexico
                             </Text>
 
                             <Text style={styles.heroSubtitle}>
@@ -46,7 +46,7 @@ export default function mePage() {
                         <Image
                             style={styles.contentImage}
                             source={{
-                                uri: "https://images.unsplash.com/photo-1500674425229-f692875b0ab7?q=80&w=1200&auto=format&fit=crop",
+                                uri: "https://paises.ibge.gov.br/img/bandeiras/MX.gif",
                             }}
                         />
 
@@ -82,9 +82,9 @@ export default function mePage() {
 
                         <Image
                             style={styles.contentImage}
-                            source={{
-                                uri: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=1200&auto=format&fit=crop",
-                            }}
+                            source={ 
+                                require('../../assets/img/mex.jpg')
+                            }
                         />
                     </View>
                 </View>
@@ -94,9 +94,9 @@ export default function mePage() {
                     <View style={styles.contentRow}>
                         <Image
                             style={styles.contentImage}
-                            source={{
-                                uri: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop",
-                            }}
+                            source={ 
+                                require('../../assets/img/stad.jpg')
+                            }
                         />
 
                         <View style={styles.contentTextBox}>
