@@ -140,7 +140,7 @@ export default function CopaUSA() {
             </View>
           </View>
 
-          {/* JOGADORES */}
+          {/* JOGADORES 
           <View style={styles.card}>
             <Text style={styles.sectionTitle}>Jogadores em Destaque</Text>
 
@@ -185,7 +185,7 @@ export default function CopaUSA() {
                 </Text>
               </View>
             </View>
-          </View>
+          </View>*/}
 
           {/* FOOTER */}
           <View style={styles.footer}>

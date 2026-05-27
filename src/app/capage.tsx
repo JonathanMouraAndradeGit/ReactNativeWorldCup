@@ -100,7 +100,7 @@ export default function caPage(props: any) {
                     <View style={styles.contentRow}>
                         <Image
                             style={styles.contentImage}
-                            source={ 
+                            source={
                                 require('../../assets/img/stad.jpg')
                             }
                         />
@@ -144,7 +144,7 @@ export default function caPage(props: any) {
                     </View>
                 </View>
 
-                {/* JOGADORES CANADÁ */}
+                {/* JOGADORES CANADÁ 
                 <View style={styles.card}>
                     <Text style={styles.sectionTitle}>Jogadores em Destaque</Text>
 
@@ -188,143 +188,149 @@ export default function caPage(props: any) {
                             </Text>
                         </View>
                     </View>
+                </View>*/}
+                {/* FOOTER */}
+                <View style={styles.footer}>
+                    <Text style={styles.footerText}>
+                        ⚽ Viva a experiência da Copa do Mundo no Canada
+                    </Text>
                 </View>
             </ScrollView>
         </View>
     )
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#07111f",
-  },
+    container: {
+        flex: 1,
+        backgroundColor: "#07111f",
+    },
 
-  heroSection: {
-    height: height * 0.78,
-  },
+    heroSection: {
+        height: height * 0.78,
+    },
 
-  heroImage: {
-    flex: 1,
-    justifyContent: "flex-end",
-  },
+    heroImage: {
+        flex: 1,
+        justifyContent: "flex-end",
+    },
 
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.55)",
-  },
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: "rgba(0,0,0,0.55)",
+    },
 
-  heroContent: {
-    padding: 25,
-  },
+    heroContent: {
+        padding: 25,
+    },
 
-  heroTitle: {
-    color: "#fff",
-    fontSize: 40,
-    fontWeight: "800",
-    lineHeight: 46,
-  },
+    heroTitle: {
+        color: "#fff",
+        fontSize: 40,
+        fontWeight: "800",
+        lineHeight: 46,
+    },
 
-  heroSubtitle: {
-    color: "#cfe3ff",
-    fontSize: 16,
-    marginTop: 12,
-    lineHeight: 24,
-  },
+    heroSubtitle: {
+        color: "#cfe3ff",
+        fontSize: 16,
+        marginTop: 12,
+        lineHeight: 24,
+    },
 
-  content: {
-    padding: 18,
-    marginTop: -30,
-  },
+    content: {
+        padding: 18,
+        marginTop: -30,
+    },
 
-  card: {
-    backgroundColor: "#0d1b2d",
-    borderRadius: 18,
-    padding: 18,
-    marginBottom: 16,
-    borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.06)",
-  },
+    card: {
+        backgroundColor: "#0d1b2d",
+        borderRadius: 18,
+        padding: 18,
+        marginBottom: 16,
+        borderWidth: 1,
+        borderColor: "rgba(255,255,255,0.06)",
+    },
 
-  sectionTitle: {
-    color: "#4da3ff",
-    fontSize: 20,
-    fontWeight: "700",
-    marginBottom: 10,
-  },
+    sectionTitle: {
+        color: "#4da3ff",
+        fontSize: 20,
+        fontWeight: "700",
+        marginBottom: 10,
+    },
 
-  sectionText: {
-    color: "#c7d2e1",
-    fontSize: 15,
-    lineHeight: 22,
-    textAlign: "justify"
-  },
+    sectionText: {
+        color: "#c7d2e1",
+        fontSize: 15,
+        lineHeight: 22,
+        textAlign: "justify"
+    },
 
-  statsRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 10,
-  },
+    statsRow: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginTop: 10,
+    },
 
-  statBox: {
-    alignItems: "center",
-    flex: 1,
-  },
+    statBox: {
+        alignItems: "center",
+        flex: 1,
+    },
 
-  statNumber: {
-    color: "#fff",
-    fontSize: 22,
-    fontWeight: "700",
-  },
+    statNumber: {
+        color: "#fff",
+        fontSize: 22,
+        fontWeight: "700",
+    },
 
-  statLabel: {
-    color: "#9bb4d1",
-    fontSize: 12,
-    marginTop: 4,
-  },
+    statLabel: {
+        color: "#9bb4d1",
+        fontSize: 12,
+        marginTop: 4,
+    },
 
-  player: {
-    flexDirection: "row",
-    marginTop: 14,
-    gap: 12,
-  },
+    player: {
+        flexDirection: "row",
+        marginTop: 14,
+        gap: 12,
+    },
 
-  playerImg: {
-    width: 55,
-    height: 55,
-    borderRadius: 28,
-  },
+    playerImg: {
+        width: 55,
+        height: 55,
+        borderRadius: 28,
+    },
 
-  playerName: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
-  },
+    playerName: {
+        color: "#fff",
+        fontSize: 16,
+        fontWeight: "600",
+    },
 
-  footer: {
-    paddingVertical: 30,
-    alignItems: "center",
-  },
+    footer: {
+        paddingVertical: 30,
+        alignItems: "center",
+    },
 
-  footerText: {
-    color: "#6ea8ff",
-    fontSize: 16,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  contentRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-  },
+    footerText: {
+        color: "#6ea8ff",
+        fontSize: 16,
+        fontWeight: "600",
+        textAlign: "center",
+    },
+    contentRow: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 12,
+    },
 
-  contentImage: {
-    width: 290,
-    height: 290,
-    borderRadius: 14,
-    backgroundColor: "#1b2a41",
-  },
+    contentImage: {
+        width: 290,
+        height: 290,
+        borderRadius: 14,
+        backgroundColor: "#1b2a41",
+    },
 
-  contentTextBox: {
-    flex: 1,
-  },
+    contentTextBox: {
+        flex: 1,
+    },
 });

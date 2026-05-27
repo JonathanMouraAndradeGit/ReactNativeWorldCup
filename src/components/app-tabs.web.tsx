@@ -24,7 +24,7 @@ export default function AppTabs() {
             <TabButton>Home</TabButton>
           </TabTrigger>
           <TabTrigger name="datacop" href="/datacop" asChild>
-            <TabButton>Data</TabButton>
+            <TabButton>Grupos</TabButton>
           </TabTrigger>
 
           <TabTrigger name="US" href="/uspage" asChild style={{ display: "none" }}>
@@ -64,7 +64,7 @@ export function CustomTabList(props: TabListProps) {
     <View {...props} style={styles.tabListContainer}>
       <ThemedView type="backgroundElement" style={styles.innerContainer}>
         <ThemedText type="smallBold" style={styles.brandText}>
-          Expo Starter
+          Copa 2026
         </ThemedText>
 
         {props.children}
@@ -77,38 +77,118 @@ const styles = StyleSheet.create({
   tabListContainer: {
     position: 'absolute',
     width: '100%',
-    padding: Spacing.three,
+    paddingHorizontal: Spacing.four,
+    paddingTop: Spacing.three,
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    zIndex: 10,
   },
+
   innerContainer: {
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.five,
-    borderRadius: Spacing.five,
+    borderRadius: 999,
     flexDirection: 'row',
     alignItems: 'center',
     flexGrow: 1,
     gap: Spacing.two,
     maxWidth: MaxContentWidth,
+
+    // visual mais claro e moderno
+    backgroundColor: 'rgba(255,255,255,0.92)',
+    borderWidth: 1,
+    borderColor: 'rgba(120,170,255,0.18)',
+
+    shadowColor: '#7CB8FF',
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.12,
+    shadowRadius: 14,
+    elevation: 8,
   },
+
   brandText: {
     marginRight: 'auto',
+    color: '#1E3A5F',
+    fontWeight: '900',
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+    fontSize: 16,
   },
+
   pressed: {
-    opacity: 0.7,
+    opacity: 0.88,
+    transform: [{ scale: 0.98 }],
   },
+
   tabButtonView: {
-    paddingVertical: Spacing.one,
-    paddingHorizontal: Spacing.three,
-    borderRadius: Spacing.three,
+    paddingVertical: Spacing.one + 2,
+    paddingHorizontal: Spacing.four,
+    borderRadius: 999,
+
+    backgroundColor: '#EEF4FF',
+    borderWidth: 1,
+    borderColor: '#D6E4FF',
   },
+
+  activeTabButton: {
+    backgroundColor: '#6EC6FF', // azul claro destaque
+    borderColor: '#A7DDFF',
+
+    shadowColor: '#6EC6FF',
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0.45,
+    shadowRadius: 12,
+    elevation: 8,
+
+    transform: [{ scale: 1.03 }],
+  },
+
+  activeTabText: {
+    color: '#003554',
+    fontWeight: '900',
+    letterSpacing: 0.5,
+  },
+
+  tabText: {
+    color: '#4A6280',
+    fontWeight: '700',
+    letterSpacing: 0.3,
+  },
+
   externalPressable: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     gap: Spacing.one,
     marginLeft: Spacing.three,
+
+    paddingVertical: Spacing.one,
+    paddingHorizontal: Spacing.three,
+    borderRadius: 999,
+
+    backgroundColor: '#F3F7FF',
+    borderWidth: 1,
+    borderColor: '#DCE8FF',
+  },
+
+  scoreBadge: {
+    backgroundColor: '#FFE082',
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 999,
+  },
+
+  scoreBadgeText: {
+    color: '#5C4300',
+    fontWeight: '900',
+    fontSize: 12,
   },
 });
 

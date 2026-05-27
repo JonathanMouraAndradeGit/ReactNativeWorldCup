@@ -13,21 +13,21 @@ const { width } = Dimensions.get("window");
 const DATA = [
   {
     id: "1",
-    title: "Cidade",
-    subtitle: "Urban view",
-    img: require("../../assets/img/city.jpg"),
+    title: "USA",
+    subtitle: "New York",
+    img: require("../../assets/img/ny.jpg"),
   },
   {
     id: "2",
-    title: "Mapa",
-    subtitle: "Global view",
-    img: require("../../assets/img/citynight.jpg"),
+    title: "Canada",
+    subtitle: "Toronto",
+    img: require("../../assets/img/Toronto-1.jpg"),
   },
   {
     id: "3",
-    title: "Shark",
-    subtitle: "Ocean life",
-    img: require("../../assets/img/datacenterhd.jpg"),
+    title: "Mexico",
+    subtitle: "Cidade do México",
+    img: require("../../assets/img/mex.jpg"),
   },
 ];
 
@@ -107,8 +107,8 @@ export default function Slider() {
 }
 const styles = StyleSheet.create({ 
   container: { flex: 1, backgroundColor: "#000", }, 
-  slide: { width, height: 300, justifyContent: "center", alignItems: "center", }, 
-  image: { width: "100%", height: "100%", resizeMode: "cover", }, 
+  slide: { width, height: 500, justifyContent: "center", alignItems: "center", }, 
+  image: { width: "100%", height: "100%", resizeMode: "cover",objectFit:"cover" }, 
   overlay: { position: "absolute", bottom: 20, left: 20, }, 
   title: { fontSize: 28, color: "#fff", fontWeight: "bold", }, 
   subtitle: { fontSize: 16, color: "#ddd", }, 

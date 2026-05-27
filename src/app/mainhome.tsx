@@ -27,7 +27,7 @@ export default function MainHome() {
       <View style={styles.heroSection}>
         <Image
           source={{
-            uri: "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
+            uri: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1600&auto=format&fit=crop",
           }}
           style={styles.heroImage}
         />
@@ -57,13 +57,13 @@ export default function MainHome() {
           </TouchableOpacity>
         </View>
       </View>
-      
+
       <Slider></Slider>
 
       {/* STADIUM SECTION */}
       <View style={styles.mainCardContainer}>
         <View style={styles.mainCardContainersub}>
-          
+
           <View style={styles.headerArea}>
             <View style={styles.liveBadge}>
               <Text style={styles.liveBadgeText}>
@@ -77,35 +77,35 @@ export default function MainHome() {
           </View>
 
           <View style={styles.CardContainer}>
-            
+
             <MainLayoutCardv2
               country="USA"
-              image="https://images.unsplash.com/photo-1508098682722-e99c643e7485"
+              image="https://paises.ibge.gov.br/img/bandeiras/US.gif"
               title="MetLife Stadium"
               description="O estádio receberá a grande final da Copa do Mundo 2026."
               group="Grupo A"
               stadium="Nova York"
-              path = "/uspage"
+              path="/uspage"
             />
 
             <MainLayoutCardv2
               country="CANADA"
-              image="https://images.unsplash.com/photo-1517466787929-bc90951d0974"
+              image="https://paises.ibge.gov.br/img/bandeiras/CA.gif"
               title="Toronto Stadium"
               description="O Canadá terá partidas importantes durante a competição."
               group="Grupo B"
               stadium="Toronto"
-              path = "/capage"
+              path="/capage"
             />
 
             <MainLayoutCardv2
               country="MEXICO"
-              image="https://images.unsplash.com/photo-1518609878373-06d740f60d8b"
+              image="https://paises.ibge.gov.br/img/bandeiras/MX.gif"
               title="Azteca Stadium"
               description="O lendário estádio receberá novamente jogos históricos."
               group="Grupo C"
               stadium="Cidade do México"
-              path = "/mepage"
+              path="/mepage"
             />
           </View>
         </View>
@@ -117,22 +117,22 @@ export default function MainHome() {
           sectionTitle="ÚLTIMAS NOTÍCIAS"
 
           mainTitle1="Brasil confirma convocação oficial"
-          mainImage1="https://images.unsplash.com/photo-1547347298-4074fc3086f0"
+          mainImage1="https://paises.ibge.gov.br/img/bandeiras/BR.gif"
           mainDescription1="Dorival Jr divulga lista final da seleção."
           mainDate1="19/05/2026"
 
           mainTitle2="Argentina quer defender o título"
-          mainImage2="https://images.unsplash.com/photo-1517466787929-bc90951d0974"
+          mainImage2="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1600&auto=format&fit=crop"
           mainDescription2="Messi pode disputar sua última Copa."
           mainDate2="18/05/2026"
 
           sideTitle1="França chega forte"
-          sideImage1="https://images.unsplash.com/photo-1518609878373-06d740f60d8b"
+          sideImage1="https://paises.ibge.gov.br/img/bandeiras/FR.gif"
           sideDescription1="Mbappé lidera elenco recheado de estrelas."
           sideDate1="17/05/2026"
 
           sideTitle2="Canadá prepara festa histórica"
-          sideImage2="https://images.unsplash.com/photo-1508098682722-e99c643e7485"
+          sideImage2="https://paises.ibge.gov.br/img/bandeiras/CA.gif"
           sideDescription2="O país terá grandes jogos durante a competição."
           sideDate2="16/05/2026"
         />
@@ -140,18 +140,19 @@ export default function MainHome() {
 
       {/* MAIN CONTENT */}
       <View style={styles.conL}>
-        
+
         {/* LEFT */}
         <View style={styles.mainCLst}>
-          
+
           {/* MAIN NEWS */}
           <View style={styles.mainNews}>
-            
+
             <View style={styles.newsImage}>
               <Image
-                source={{
-                  uri: "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
-                }}
+                source={
+                  require('../../assets/img/ny.jpg')
+                  //uri: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop",
+                }
                 style={styles.newsImg}
               />
             </View>
@@ -179,22 +180,22 @@ export default function MainHome() {
           {/* GRID V2 */}
           <MainLayoutGrdCardv2
             mainTitle="Brasil chega como favorito para a Copa 2026"
-            mainImage="https://images.unsplash.com/photo-1547347298-4074fc3086f0"
+            mainImage="https://paises.ibge.gov.br/img/bandeiras/BR.gif"
             mainDescription="A seleção brasileira aposta em uma nova geração."
             mainDate="19/05/2026"
 
             sideTitle1="Mbappé lidera França"
-            sideImage1="https://images.unsplash.com/photo-1518609878373-06d740f60d8b"
+            sideImage1="https://paises.ibge.gov.br/img/bandeiras/FR.gif"
             sideDescription1="A França chega entre as favoritas."
             sideDate1="18/05/2026"
 
             sideTitle2="Estados Unidos preparados"
-            sideImage2="https://images.unsplash.com/photo-1508098682722-e99c643e7485"
+            sideImage2="https://paises.ibge.gov.br/img/bandeiras/US.gif"
             sideDescription2="O país-sede investe pesado em estrutura."
             sideDate2="17/05/2026"
           />
 
-          {/* NEWS GRID */}
+          {/* NEWS GRID 
           <View style={styles.CardLst}>
             {Array.from(Array(8).keys()).map((el, i) => (
               <TouchableOpacity
@@ -223,10 +224,14 @@ export default function MainHome() {
                 </Text>
               </TouchableOpacity>
             ))}
-          </View>
+          </View>*/}
         </View>
-
-        {/* RIGHT */}
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>
+            ⚽ Viva a experiência da Copa do Mundo
+          </Text>
+        </View>
+        {/* RIGHT 
         <View style={styles.sideInfo}>
           
           <Text style={styles.sideTitleSection}>
@@ -276,7 +281,7 @@ export default function MainHome() {
               </View>
             )
           )}
-        </View>
+        </View>*/}
       </View>
     </ScrollView>
   );
@@ -592,5 +597,17 @@ const styles = StyleSheet.create({
   playerName: {
     color: "#fff",
     fontWeight: "bold",
+  },
+
+  footer: {
+    paddingVertical: 30,
+    alignItems: "center",
+  },
+
+  footerText: {
+    color: "#6ea8ff",
+    fontSize: 16,
+    fontWeight: "600",
+    textAlign: "center",
   },
 });

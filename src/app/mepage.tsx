@@ -39,7 +39,6 @@ export default function mePage() {
                         </View>
                     </ImageBackground>
                 </View>
-                {/* HISTÓRIA CANADÁ */}
                 {/* HISTÓRIA MÉXICO */}
                 <View style={styles.card}>
                     <View style={styles.contentRow}>
@@ -82,7 +81,7 @@ export default function mePage() {
 
                         <Image
                             style={styles.contentImage}
-                            source={ 
+                            source={
                                 require('../../assets/img/mex.jpg')
                             }
                         />
@@ -94,7 +93,7 @@ export default function mePage() {
                     <View style={styles.contentRow}>
                         <Image
                             style={styles.contentImage}
-                            source={ 
+                            source={
                                 require('../../assets/img/stad.jpg')
                             }
                         />
@@ -138,7 +137,8 @@ export default function mePage() {
                     </View>
                 </View>
 
-                {/* JOGADORES MÉXICO */}
+
+                {/* JOGADORES MÉXICO 
                 <View style={styles.card}>
                     <Text style={styles.sectionTitle}>Jogadores em Destaque</Text>
 
@@ -180,6 +180,12 @@ export default function mePage() {
                             </Text>
                         </View>
                     </View>
+                </View>*/}
+                {/* FOOTER */}
+                <View style={styles.footer}>
+                    <Text style={styles.footerText}>
+                        ⚽ Viva a experiência da Copa do Mundo no Mexico
+                    </Text>
                 </View>
             </ScrollView>
         </View>
