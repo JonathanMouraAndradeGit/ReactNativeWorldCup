@@ -1,56 +1,63 @@
-# Welcome to your Expo app 👋
+# ⚽ Copa do Mundo 2026
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicação desenvolvida em React Native com o objetivo de apresentar informações sobre a Copa do Mundo de 2026 de forma educativa e interativa. O sistema reúne dados sobre seleções participantes, países-sede e um quiz para testar os conhecimentos dos usuários sobre futebol e a história das Copas do Mundo.
 
-## Get started
+## 📱 Funcionalidades
 
-1. Install dependencies
+### ⚽ Jogadores das Seleções dos Grupos A, B e C
 
-   ```bash
-   npm install
-   ```
+A aplicação apresenta informações sobre os principais jogadores das seleções participantes dos grupos A, B e C da Copa do Mundo de 2026. Cada seção reúne dados dos atletas, permitindo ao usuário conhecer melhor os elencos e suas características.
 
-2. Start the app
+### 🧠 Quiz da Copa
+Quiz interativo composto por perguntas relacionadas à Copa do Mundo, permitindo ao usuário testar seus conhecimentos e visualizar sua pontuação ao final.
 
-   ```bash
-   npx expo start
-   ```
+### 🌎 Países-Sede e História do Futebol
+A aplicação apresenta informações sobre os países que sediarão a Copa do Mundo de 2026, destacando aspectos gerais de cada nação, sua cultura esportiva e a importância do torneio para a região. Além disso, conta com uma seção dedicada à história e trajetória das seleções e países participantes, abordando conquistas, participações em Copas do Mundo e acontecimentos marcantes do futebol internacional.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tecnologias Utilizadas
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native
+- JavaScript
+- React Hooks (`useState`)
+- StyleSheet para estilização
+- Json Server
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 Como Executar o Projeto
+
+### 1. Clonar o repositório
 
 ```bash
-npm run reset-project
+git clone https://github.com/JonathanMouraAndradeGit/ReactNativeWorldCup.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Entrar na pasta do projeto
 
-### Other setup steps
+```bash
+cd CopProject
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Instalar as dependências
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Executar o projeto
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```front
+npm run start
+```
 
-## Join the community
+```back
+json-server --watch teams.json     
+```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🎯 Objetivo
+
+O projeto tem como objetivo proporcionar uma experiência informativa e interativa sobre a Copa do Mundo de 2026, permitindo que os usuários conheçam melhor as seleções participantes, os países-sede e a história do futebol mundial por meio de conteúdo educativo e atividades interativas.
