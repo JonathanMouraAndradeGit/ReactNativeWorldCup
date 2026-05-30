@@ -13,6 +13,8 @@ import MainLayoutCardv2 from "@/components/MainLayoutCardv2";
 import MainLayoutGrdCardv2 from "@/components/MainLayoutGrdCardv2";
 import MainLayoutGrdCardv3 from "@/components/MainLayoutGrdCardv3";
 
+import Quiz from "@/components/quiz";
+
 import Slider from "@/components/SliderFF2";
 
 const { width, height } = Dimensions.get("window");
@@ -59,6 +61,8 @@ export default function MainHome() {
       </View>
 
       <Slider></Slider>
+
+      <Quiz></Quiz>
 
       {/* STADIUM SECTION */}
       <View style={styles.mainCardContainer}>
